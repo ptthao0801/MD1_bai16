@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Circle {
+        //khai bao thuoc tinh (ES6)
+        r
+        c
+        constructor(radius, color) {
+            this.r = radius
+            this.c = color
+            // DAY LA CACH DUNG CHO ES5
+            // this.getRadius = function (){return this.r}
+            // this.getArea = function (){return Math.PI*this.r*this.r}
+        }
+        // khai bao method (ES6)
+        getRadius() {
+            return this.r
+        }
+        getArea() {
+            return Math.PI*this.r*this.r
+        }
+    }
+
+    let hinhtron = new Circle(2,'red')
+    alert(hinhtron.c)
+    alert(hinhtron.getRadius())
+    alert(hinhtron.getArea())
+</script>
