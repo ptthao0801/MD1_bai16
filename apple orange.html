@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function countApplesAndOranges(s, t, a, b, apples, oranges) {
+        // Write your code here
+        let distance =0
+        let d_apples = []
+        let d_oranges = []
+        let count_a =  0
+        let count_b = 0
+        let count = []
+        for (i=0; i<apples.length; i++){
+            apples[i] += a
+            d_apples.push(apples[i])
+        }
+        for (i=0; i<oranges.length; i++){
+            oranges[i] += b
+            d_oranges.push(oranges[i])
+        }
+        for (i=0; i<d_apples.length; i++){
+            if (d_apples[i]>=7){
+                count_a++
+            }
+        }
+        for (i=0; i<d_oranges.length; i++){
+            if (d_oranges[i]>=10){count_b++}
+        }
+        count.push(count_a, count_b)
+        document.write(count)
+    }
+    // s, t, a, b, apples, oranges
+    let s=7
+    let t=10
+    let a=4
+    let b=12
+    let apples = [2,3,-4]
+    let oranges = [3,-2,-4]
+    countApplesAndOranges(s, t, a, b, apples, oranges)
+</script>

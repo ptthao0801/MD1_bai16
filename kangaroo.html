@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function kangaroo(x1, v1, x2, v2) {
+        // Write your code here
+        let x1_jump =0
+        let x2_jump =0
+        let count = 0
+        for (let i=0; i<20 ;i++){
+            x1_jump = x1+ (i*v1)
+            x2_jump = x2+ (i*v2)
+            if (x1_jump==x2_jump){
+                count++
+                break
+            }
+        }
+        if (count>0){
+            return "YES"
+    }
+        else {return "NO"}
+}
+    kangaroo(0,3,4,2)
+</script>

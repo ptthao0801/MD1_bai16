@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a id="buy-now" onclick="addtocart()">MUA NGAY</a>
+<table>
+    <tr>
+        <td>dang nhap</td>
+        <td>tro giup</td>
+        <td id="print"></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+    let total = 0
+    let data = "<td id=\"giohang\">gio" + total+"</td>\n"
+    document.getElementById("print").innerHTML = data
+    function addtocart(){
+        total++
+        console.log(total)
+    }
+    console.log(total)
+</script>
